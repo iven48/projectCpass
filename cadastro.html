@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="../telecall CSS/cadastro.css">
+    <title>Cadastro de Novo Usuário - CPaaS Plataform</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../telecall IMG/logo-telecall.jpeg" alt="logo telecall" width="80px">
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item" ><a href="../telecall HTML/index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item" ><a href="../telecall HTML/cadastro.html" id="active" class="nav-link">Cadastro</a></li>
+                    <li class="nav-item" ><a href="#" class="nav-link">Contato</a></li>
+                    <li class="nav-item" ><a href="#" class="nav-link">Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <button><a href="../telecall HTML/login.html">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>
+            </button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item" ><a href="../telecall HTML/index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item" ><a href="../telecall HTML/cadastro.html" class="nav-link">Cadastro</a></li>
+                <li class="nav-item" ><a href="#" class="nav-link">Contato</a></li>
+                <li class="nav-item" ><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="../telecall HTML/login.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+  <main>
+    
+    <div class="box">
+        <form id="form">
+           <fieldset>
+
+            <div id="logo-modavo">
+            <img src="../telecall IMG/logo-modavo.jpeg" width="230px">
+            <p>CPaaS Plataform</p>
+            </div>
+
+            <br>
+  
+          <div class="inputbox">
+              <input type="text" id="nome" name="nome" class="inputuser" required>
+              <label for="nome" class="labelinput"><b>Nome Completo:</b></label>
+          </div>
+  
+          <br>
+  
+          <div class="inputbox">
+              <input type="text" id="materno" name="materno" class="inputuser" required>
+              <label for="materno" class="labelinput"><b>Nome Materno:</b></label>
+          </div>
+  
+          <br>
+  
+      <div class="cpf_nasc">
+  
+          <div class="inputbox">
+              <input type="number" id="cpf" name="cpf" class="inputuser" required>
+              <label for="cpf" class="labelinput"><b>CPF:</b></label>
+          </div>
+  
+          <br>
+  
+          <div>
+              <label for="nasc"><b>Data de Nascimento:</b></label>
+              <input type="date" id="nasc" name="nasc" required>
+          </div>
+  
+      </div>
+  
+        <br>
+  
+          <div>
+              <p id="genero"><b>Genêro:</b></p>
+              <input type="radio" id="feminino" name="genero" value="feminino" required>
+              <label for="feminino">Feminino</label>
+              <input type="radio" id="masculino" name="genero" value="masculino" required>
+              <label for="masculino">Masculino</label>
+              <input type="radio" id="outro" name="genero" value="outro" required>
+              <label for="outro">Outro</label>
+          </div>
+  
+          <br>
+          
+      <div class="telefones">
+  
+          <div class="inputbox">
+              <input type="tel" id="cel" name="cel" class="inputuser" required>
+              <label id="labelCel" for="cel" class="labelinput"><b>Telefone Celular:</b></label>
+          </div>
+  
+          <br>
+  
+          <div class="inputbox">
+              <input type="tel" id="tel" name="tel" class="inputuser" required>
+              <label id="labelTel" for="tel" class="labelinput"><b>Telefone Fixo:</b></label>
+          </div>
+  
+      </div>
+  
+      <br>
+  
+      <div class="estado_cep_cidade">
+  
+          <div class="inputbox">
+              <input type="number" id="cep" name="cep" class="inputuser" required>
+              <label id="labelCep" for="cep" class="labelinput"><b>CEP:</b></label>
+          </div>
+  
+          <br>
+  
+          <div class="inputbox">
+              <input type="text" id="cidade" name="cidade" class="inputuser" required>
+              <label id="labelCidade" for="cidade" class="labelinput"><b>Cidade:</b></label>
+          </div>
+  
+          <br>
+  
+          <div class="inputbox">
+              <input type="text" maxlength="2" id="estado" name="estado" class="inputuser" required>
+              <label id="labelEstado" for="estado" class="labelinput"><b>Estado:</b></label>
+
+          </div>
+  
+      </div>
+  
+          <br>
+  
+      <div class="rua_numero_bairro">
+  
+          <div class="inputbox">
+              <input type="text" id="bairro" name="bairro" class="inputuser" required>
+              <label id="labelBairro" for="bairro" class="labelinput"><b>Bairro:</b></label>
+
+          </div>
+  
+          <br>
+  
+          <div class="inputbox">
+              <input type="text" id="rua" name="rua" class="inputuser" required>
+              <label id="labelRua" for="rua" class="labelinput"><b>Rua:</b></label>
+          </div>
+  
+          <br>
+  
+          <div class="inputbox">
+              <input type="number" id="numero" name="numero" class="inputuser" required>
+              <label id="labelNumero" for="numero" class="labelinput"><b>Nº:</b></label>
+          </div>
+  
+      </div>
+  
+          <br>
+  
+          <div class="inputbox">
+              <input type="text" id="login" name="login" class="inputuser" required>
+              <label id="labelLogin" for="login" class="labelinput"><b>Login:</b></label>
+          </div>
+  
+          <br>
+  
+      <div class="senhas">
+  
+          <div class="inputbox">
+              <input type="password" id="senha" name="senha" class="inputuser" required>
+              <label id="labelSenha" for="senha" class="labelinput"><b>Senha:</b></label>
+          </div>
+  
+          <br>
+  
+          <div class="inputbox">
+              <input type="password" id="senha2" name="senha2" class="inputuser" required>
+              <label id="labelConfirmarSenha" for="senha2" class="labelinput"><b>Confirmar senha:</b></label>
+
+          </div>
+  
+      </div>
+  
+          <br>
+  
+          <input onclick="enviar()" type="submit" name="submit" id="submit">
+
+          <p id="logue-se">Já possui cadastro?<a href="../telecall HTML/login.html"> Logue-se aqui.</a></p>
+  
+          </fieldset>
+      </form>
+ </div>
+       
+  </main>
+
+  <footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <img src="../telecall IMG/logo-telecall.jpeg" alt="logo telecall" width="80px">
+            <p>Internet Dedicada</p>
+
+            <div id="footer_social_media">
+                <a href="https://instagram.com/telecallbr?igshid=MzRlODBiNWFlZA==" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/TelecallBr?mibextid=ZbWKwL" class="footer-link" id="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/company/telecall/" class="footer-link" id="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Site</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Localização</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Clientes</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Prêmios</a>
+            </li>
+        </ul>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Produtos</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">App</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Serviços</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Internet</a>
+            </li>
+        </ul>
+
+        <div id="footer_subscribe">
+            <h3>Assine!</h3>
+
+            <p>
+                CONFIANÇA   Empresas que já conhecem e confiam no nosso trabalho
+                AGILIDADE     Aplicativos de rápida implementação para qualquer negócio
+                GARANTIA DE REDE    Rede própria de alta capacidade e controle total ponta a ponta
+                SUPORTE AO CLIENTE    Representantes locais de vendas e suporte
+                PREÇO   Melhor custo benefício para um conjunto completo de serviços
+            </p>
+        </div>
+    </div>
+    <div id="footer_copyright">
+        &#169
+        2023 All Rights Reserved
+    </div>
+</footer>
+
+</body>
+</html>

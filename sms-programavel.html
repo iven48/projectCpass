@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="../telecall CSS/sms-programavel.css">
+    <script href="../telecall JavaScript/sms-programavel.js"></script>
+    <title>Numero Mascara - CPaas Plataform</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../telecall IMG/logo-telecall.jpeg" alt="logo telecall" width="80px">
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item" ><a href="../telecall HTML/index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item" ><a href="../telecall HTML/cadastro.html" class="nav-link">Cadastro</a></li>
+                    <li class="nav-item" ><a href="#" class="nav-link">Contato</a></li>
+                    <li class="nav-item" ><a href="#" class="nav-link">Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <button><a href="../telecall HTML/login.html">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>
+            </button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item" ><a href="../telecall HTML/index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item" ><a href="../telecall HTML/cadastro.html" class="nav-link">Cadastro</a></li>
+                <li class="nav-item" ><a href="#" class="nav-link">Contato</a></li>
+                <li class="nav-item" ><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="../telecall HTML/login.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <nav class="menu-soluções">
+            <p id="conheça">Conheça Nossas Soluções Para Sua Empresa</p>
+            <div class="lista-soluções">
+                <ul>
+                    <li class="soluções"><a href="../telecall HTML/2FA.html" class="link-soluções"><img src="../telecall IMG/2FA-soluções.jpg" width="60px"><p class="link-itens">2FA</p></a></li>
+
+                    <li class="soluções"><a href="../telecall HTML/numero-mascara.html" class="link-soluções"><img src="../telecall IMG/numero-mascara-soluções.jpg" width="60px"><p class="link-itens">Número Máscara</p></a></li>
+
+                    <li class="soluções"><a href="../telecall HTML/google-verified-calls.html" class="link-soluções"><img src="../telecall IMG/SMS-programavel-soluções.jpg" width="63px"><p class="link-itens">Google Verified Calls</p></a></li>
+
+                    <li class="soluções"><a href="../telecall HTML/sms-programavel.html" class="link-soluções"><img src="../telecall IMG/verified-calls-soluções.jpg" width="60px"><p class="link-itens">SMS Programável</p></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1>SMS Programavel</h1>
+        <hr id="linha-h1">
+
+        <p id="introdução">O Que é?</p>
+        <p id="sub-escrita-o-que-e">Conecte-se com seus clientes.</p>
+
+        <p id="texto-o-que-e">
+            É muito provável que você já tenha recebido uma mensagem de texto de uma empresa ou organização.
+            <br>
+            Com uma API, qualquer empresa pode enviar mensagens de texto e impactar clientes, prospects ou fornecedores como parte de seu processo comercial.
+            <br>
+            Com essa ferramenta você envia mensagens de SMS com as informações que o seu cliente precisa e com a segurança, a velocidade e a confiabilidade que você espera.
+        </p>
+
+        <p id="sms-numeros">SMS é a forma mais rápida, eficiente e de baixo custo para se comunicar com seus clientes.</p>
+
+        <div class="numeros">
+            <p id="n98">98%</p>
+            <p id="n90">90%</p>
+            <p id="n80">80%</p>
+            <p id="n35">35X</p>
+        </div>
+
+        <div class="frases">
+            <p id="frase-n98">de taxa de abertura</p>
+            <p id="frase-n90">dos SMS são lidos em até 3 minutos.</p>
+            <p id="frase-n80">das pessoas interagem com SMS comerciais.</p>
+            <p id="frase-n35">maior a probabilidade de um cliente abrir um SMS do que um e-mail.</p>
+        </div>
+
+        <p id="quem-usa">Quem Usa?</p>
+        <hr id="linha-quem-usa">
+
+        <p id="frase-quem-usa">São muitos os caso de uso, mas veja alguns exemplos:</p>
+
+        <img id="cinco-celulares" src="../telecall IMG/cinco-celulares-removebg-preview.png" width="45%" height="40%">
+
+        <p id="paragrafo-quem-usa1">Divulgação</p>
+        <p id="paragrafo-quem-usa2">Transições</p>
+        <p id="paragrafo-quem-usa3">Segurança</p>
+        <p id="paragrafo-quem-usa4">Suporte ao Cliente</p>
+        <p id="paragrafo-quem-usa5">Notificações</p>
+
+        <p id="quem-mais-usa">Jornada do Cliente</p>
+        <hr id="linha-quem-mais-usa">
+
+        <p id="paragrafo-quem-mais-usa">Ofereça uma melhor experiência ao cliente acompanhando a sua jornada de compra.</p>
+
+        <img id="entregador-img" src="../telecall IMG/entregador-removebg-preview.png" width="55%" height="55%">
+        <img id="entregador-img1" src="../telecall IMG/entregador-removebg-preview.png" width="55%" height="55%">
+        <img id="entregador-img2" src="../telecall IMG/entregador-removebg-preview.png" width="55%" height="55%">
+
+        <p id="beneficios">Beneficios</p>
+        <hr id="linha-beneficios">
+        <p id="texto-beneficios">
+            • Comunicação rápida, efetiva e escalável.
+            <br>
+            <br>
+            • Alta taxa de entrega e leitura.
+            <br>
+            <br>
+            • Personalização de data, hora e conteúdo.
+            <br>
+            <br>
+            • Baixo custo.
+            <br>
+            <br>
+            • Interação bidirecional: recebimento de respostas.
+            <br>
+            <br>
+            • Agendamento de campanhas.
+            <br>
+            <br>
+            • Acompanhamento de métricas e relatórios.
+            <br>
+            <br>
+            • Plataforma user-friendly.
+        </p>
+
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="../telecall IMG/logo-telecall.jpeg" alt="logo telecall" width="80px">
+                <p>Internet Dedicada</p>
+    
+                <div id="footer_social_media">
+                    <a href="https://instagram.com/telecallbr?igshid=MzRlODBiNWFlZA==" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+    
+                    <a href="https://www.facebook.com/TelecallBr?mibextid=ZbWKwL" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+    
+                    <a href="https://www.linkedin.com/company/telecall/" class="footer-link" id="linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <ul class="footer-list">
+                <li>
+                    <h3>Site</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Localização</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Clientes</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Prêmios</a>
+                </li>
+            </ul>
+    
+            <ul class="footer-list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Serviços</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Internet</a>
+                </li>
+            </ul>
+    
+            <div id="footer_subscribe">
+                <h3>Assine!</h3>
+    
+                <p>
+                    CONFIANÇA   Empresas que já conhecem e confiam no nosso trabalho
+                    AGILIDADE     Aplicativos de rápida implementação para qualquer negócio
+                    GARANTIA DE REDE    Rede própria de alta capacidade e controle total ponta a ponta
+                    SUPORTE AO CLIENTE    Representantes locais de vendas e suporte
+                    PREÇO   Melhor custo benefício para um conjunto completo de serviços
+                </p>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2023 All Rights Reserved
+        </div>
+    </footer>
+
+</body>
+</html>

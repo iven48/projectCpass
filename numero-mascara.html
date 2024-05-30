@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="../telecall CSS/numero-mascara.css">
+    <script href="../telecall JavaScript/numero-mascara.js"></script>
+    <title>Numero Mascara - CPaas Plataform</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../telecall IMG/logo-telecall.jpeg" alt="logo telecall" width="80px">
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item" ><a href="../telecall HTML/index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item" ><a href="../telecall HTML/cadastro.html" class="nav-link">Cadastro</a></li>
+                    <li class="nav-item" ><a href="#" class="nav-link">Contato</a></li>
+                    <li class="nav-item" ><a href="#" class="nav-link">Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <button><a href="../telecall HTML/login.html">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>
+            </button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item" ><a href="../telecall HTML/index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item" ><a href="../telecall HTML/cadastro.html" class="nav-link">Cadastro</a></li>
+                <li class="nav-item" ><a href="#" class="nav-link">Contato</a></li>
+                <li class="nav-item" ><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="../telecall HTML/login.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <nav class="menu-soluções">
+            <p id="conheça">Conheça Nossas Soluções Para Sua Empresa</p>
+            <div class="lista-soluções">
+                <ul>
+                    <li class="soluções"><a href="../telecall HTML/2FA.html" class="link-soluções"><img src="../telecall IMG/2FA-soluções.jpg" width="60px"><p class="link-itens">2FA</p></a></li>
+
+                    <li class="soluções"><a href="../telecall HTML/numero-mascara.html" class="link-soluções"><img src="../telecall IMG/numero-mascara-soluções.jpg" width="60px"><p class="link-itens">Número Máscara</p></a></li>
+
+                    <li class="soluções"><a href="../telecall HTML/google-verified-calls.html" class="link-soluções"><img src="../telecall IMG/SMS-programavel-soluções.jpg" width="63px"><p class="link-itens">Google Verified Calls</p></a></li>
+
+                    <li class="soluções"><a href="../telecall HTML/sms-programavel.html" class="link-soluções"><img src="../telecall IMG/verified-calls-soluções.jpg" width="60px"><p class="link-itens">SMS Programável</p></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1>Numero Mascara</h1>
+        <hr id="linha-numero-mascara">
+        <h2>Proteja identidades profissionais</h2>
+
+        <p id="introdução">
+            Garanta aos seus clientes a capacidade de fazer chamadas e enviar mensagens sem expor seus números de telefone pessoais.
+        </p>
+
+        <img id="numero-mascara-celular" src="../telecall IMG/celular-numero-mascara.jpg" width="10%" height="40%">
+
+        <p id="lista-introdução">
+            • Mascare um número de telefone para interações com mais privacidade.
+            <br>
+            <br>
+            • Permite que empresas façam negócios usando menos números de telefone.
+            <br>
+            <br>
+            • Oferece uma experiência mais segura e profissional.
+        </p>
+
+        <p id="como-funciona">Como Funciona?</p>
+        <hr id="linha-como-funciona">
+
+        <p id="texto-moca-celular">Usuário faz uma chamada através de um aplicativo.</p>
+        <img id="moça-celular" src="../telecall IMG/moça-celular.jpg" width="7%" height="11%">
+        <p id="paragrafo-moca-celular">Ex: usuário liga para o entregador ou motorista de taxi ou entra em contato com a central de atendimento.</p>
+
+        <p id="nuvem-texto">Plataforma mascara o número original.</p>
+        <img id="nuvem" src="../telecall IMG/nuvenzinha-removebg-preview.png" width="6%" height="11%">
+        <p id="paragrafo-nuvem">A plataforma recebe a chamada e mascara o número antes de conectar com o destinatário.</p>
+
+        <p id="texto-moca-atendente">Ambas as partes são conectadas.</p>
+        <img id="moça-atendente" src="../telecall IMG/moça-atendente-removebg-preview.png" width="8.5%" height="11%">
+        <p id="paragrafo-moca-atendente">A plataforma conecta ambas as partes mantendo a privacidade dos dois.</p>
+
+        <img id="seta-branca1" src="../telecall IMG/seta-branca-removebg-preview.png" width="6%" height="11%">
+        <img id="seta-branca2" src="../telecall IMG/seta-branca-removebg-preview.png" width="6%" height="11%">
+
+        <p id="quem-usa">Quem Usa?</p>
+        <hr id="linha-quem-usa">
+
+        <img id="carro" src="../telecall IMG/transporte-removebg-preview.png" width="9%" height="14%">
+        <p id="texto-carro">Usuário faz uma chamada através de um aplicativo.</p>
+
+        <img id="celular-coração" src="../telecall IMG/apps-relacionamento-removebg-preview.png" width="9%" height="14%">
+        <p id="texto-celular-coração">Usuário faz uma chamada através de um aplicativo.</p>
+
+        <img id="carrinho-compras" src="../telecall IMG/carrinho-compras-removebg-preview.png" width="9%" height="14%">
+        <p id="texto-carrinho-compras">Usuário faz uma chamada através de um aplicativo.</p>
+
+        <img id="caminhão" src="../telecall IMG/caminhão-removebg-preview.png" width="9%" height="14%">
+        <p id="texto-caminhão">Usuário faz uma chamada através de um aplicativo.</p>
+
+        <img id="carro2" src="../telecall IMG/transporte-removebg-preview.png" width="9%" height="14%">
+        <img id="celular-coração2" src="../telecall IMG/apps-relacionamento-removebg-preview.png" width="9%" height="14%">
+        <img id="carrinho-compras2" src="../telecall IMG/carrinho-compras-removebg-preview.png" width="9%" height="14%">
+        <img id="caminhão2" src="../telecall IMG/caminhão-removebg-preview.png" width="9%" height="14%">
+
+        <img id="app-transporte" src="../telecall IMG/apps-de-transporte-removebg-preview.png" width="8%" height="8%">
+        <img id="app-relacionamento" src="../telecall IMG/relacionamento-apps-removebg-preview.png" width="8%" height="8%">
+        <img id="comercio" src="../telecall IMG/comercio-removebg-preview.png" width="6%" height="8%">
+        <img id="app-logistica" src="../telecall IMG/apps-de-logistica-removebg-preview.png" width="8%" height="8%">
+
+        <p id="quem-mais-usa">Quem Mais Pode Usar?</p>
+        <hr id="linha-quem-mais-usa">
+
+        <p id="texto-quem-mais-usa">
+            43% das empresas brasileiras adotou o Home Office como padrão.
+            <br>
+            <br>
+            Funcionários que não possuem celular empresarial ou ramal virtual podem se beneficiar do uso de um número máscara permanente do trabalho vinculado ao seu telefone celular, assim protegendo seus número pessoais. Mesmo após o fim da pandemia, estatísticas indicam que o modelo de trabalho Home Office deve crescer cerca de 30%.
+        </p>
+
+        <p id="paragrafo-quem-mais-usa">
+            Funcionários que não possuem celular empresarial ou ramal virtual podem se beneficiar do uso de um número máscara permanente do trabalho vinculado ao seu telefone celular, assim protegendo seus número pessoais.
+        </p>
+
+        <p id="recursos">Recursos Avançados</p>
+        <hr id="linha-recursos">
+        <p id="texto-recursos">
+            • SMS – Número máscara é totalmente funcional para chamadas de voz e SMS.
+            <br>
+            <br>
+            • Geo Match – Combine o código do país do número mascarado com o da chamada de origem passando pro cliente a impressão de que vocês estão na mesma região.
+            <br>
+            <br>
+            • Gestão de Sessões – Habilite números máscara permanentes, bloqueie chamadas indesejadas, validade de sessão e etc.
+            <br>
+            <br>
+            • Relatórios – Acesso direto do cliente à relatórios detalhados.
+            <br>
+            <br>
+            • Números Simultâneos - Use o mesmo número máscara em várias ligações simultâneas.
+            <br>
+            <br>
+            • Triagem de Conteúdo – Recurso SMS onde você pode sinalizar conteúdos sensíveis para proteger dados do cliente.
+            <br>
+            <br>
+            • Escalabilidade Ilimitada – compre e adicione números conforme necessário.
+        </p>
+
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="../telecall IMG/logo-telecall.jpeg" alt="logo telecall" width="80px">
+                <p>Internet Dedicada</p>
+    
+                <div id="footer_social_media">
+                    <a href="https://instagram.com/telecallbr?igshid=MzRlODBiNWFlZA==" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+    
+                    <a href="https://www.facebook.com/TelecallBr?mibextid=ZbWKwL" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+    
+                    <a href="https://www.linkedin.com/company/telecall/" class="footer-link" id="linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <ul class="footer-list">
+                <li>
+                    <h3>Site</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Localização</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Clientes</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Prêmios</a>
+                </li>
+            </ul>
+    
+            <ul class="footer-list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Serviços</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Internet</a>
+                </li>
+            </ul>
+    
+            <div id="footer_subscribe">
+                <h3>Assine!</h3>
+    
+                <p>
+                    CONFIANÇA   Empresas que já conhecem e confiam no nosso trabalho
+                    AGILIDADE     Aplicativos de rápida implementação para qualquer negócio
+                    GARANTIA DE REDE    Rede própria de alta capacidade e controle total ponta a ponta
+                    SUPORTE AO CLIENTE    Representantes locais de vendas e suporte
+                    PREÇO   Melhor custo benefício para um conjunto completo de serviços
+                </p>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2023 All Rights Reserved
+        </div>
+    </footer>
+
+</body>
+</html>

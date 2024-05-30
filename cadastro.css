@@ -1,0 +1,412 @@
+:root{
+    --color-white: #fff;
+    --color-black1: rgb(49, 49, 49);
+    --color-black2:  rgb(39, 38, 38);
+    --color-blue1: rgb(41, 151, 224);
+    --color-gray1: rgb(102, 102, 102);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.514) 50%, rgba(240, 244, 248, 0.808) 50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: flex;
+    height: 160vh;
+}
+
+/*========== Cabeçalho/Menu de opcções ==========*/
+
+header{
+    background-color: white;
+    box-shadow: 0px 3px 10px rgb(49, 49, 49);
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    padding: 0 15px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(53, 53, 53);
+    font-weight: bold;
+}
+
+.login-button button{
+    border: none;
+    background-color: rgb(41, 151, 224);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.login-button button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+@media screen and (max-width: 730px){
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .login-button{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button{
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button{
+        width: 100%;
+    }
+}
+
+#active{
+    border: none;
+    background-color: rgb(232, 232, 233);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.open{
+    display: block;
+}
+
+/*======== Formulário de Cadastro de Novo Usuário =======*/
+
+.box{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    position:absolute;
+    top: 70%;
+    left: 55%;
+    transform: translate(-60%,-30%);
+    width: 50%;
+    background-color: rgb(253, 253, 253);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgb(49, 49, 49);
+    
+}
+
+fieldset{
+    border: 3px solid rgb(41, 151, 224);
+    padding: 8%;
+    border-radius: 10px;
+}
+
+.inputbox{
+    position: relative;
+}
+
+.inputuser{
+    background: none;
+    border: none;
+    border-bottom: solid rgb(39, 38, 38);
+    outline: none;
+    color: rgb(53, 53, 53);
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelinput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputuser:focus ~ .labelinput , .inputuser:valid ~ .labelinput{
+    top: -20px;
+    font-size: 12px;
+    color: var(--color-blue1);
+}
+
+#nasc{
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+#submit{
+    background-color: rgb(40, 53, 114);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: rgb(235, 232, 232);
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#submit:hover{
+    background-color: rgb(30, 30, 90);
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#logo-modavo{
+    text-align: center;
+}
+
+#logo-modavo p{
+    font-weight: bold;
+    color: rgb(48, 162, 238);
+    font-size: 20px;
+}
+
+#logue-se{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(39, 38, 38);
+}
+
+#logue-se a{
+    text-decoration: none;
+    color: rgb(40, 53, 114);
+}
+
+#estado{
+    width: 35%;
+}
+
+#cep{
+    width: 100%;
+}
+
+#cidade{
+    width: 110%;
+}
+
+.estado_cep_cidade{
+    display: flex;
+    column-gap: 30px;
+}
+
+#numero{
+    width: 35%;
+}
+
+#rua{
+    width: 110%;
+}
+
+.rua_numero_bairro{
+    display: flex;
+    column-gap: 30px;
+}
+
+#tel{
+    width: 150%;
+}
+
+#cel{
+    width: 140%;
+}
+
+.telefones{
+    display: flex;
+    column-gap: 30px;
+}
+
+#cpf{
+    width: 110%;
+}
+
+.cpf_nasc{
+    display: flex;
+    column-gap: 30px;
+}
+
+#senha{
+    width: 75%;
+}
+
+#senha2{
+    width: 70%;
+}
+
+.senhas{
+    display: flex;
+    column-gap: 30px;
+}
+
+/*========== Rodapé Com Informações ==========*/
+
+footer{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 3px 10px rgb(49, 49, 49);
+}
+
+#footer_content{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1{
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link{
+    height: 2.5rem;
+    width: 2.5rem;
+    color: black;
+}
+
+#footer_social_media .footer-link i{
+    font-size: 1.50rem;
+}
+
+.footer-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer-list .footer-link{
+    color: rgb(51, 51, 51);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover{
+    color: rgb(54, 110, 231);
+}
+
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p{
+    color: black;
+}
+
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 4px;
+}
+
+#input_group input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button{
+    border: none;
+    background-color: whitesmoke;
+    color: black;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover{
+    opacity: 0.8;
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and(max-width: 768px){
+    #footer_content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and(max-width: 426px){
+    #footer_content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
